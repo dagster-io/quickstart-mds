@@ -16,6 +16,7 @@ setup(
         "scipy",
         "dbt-core",
         "dbt-postgres",
+        "packaging<22.0",  # match dbt-core's requirement to workaround a resolution issue
     ],
     extras_require={"dev": ["dagit", "pytest"]},
 )
